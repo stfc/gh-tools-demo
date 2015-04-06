@@ -12,7 +12,7 @@ cache: pip
 # Commands that prepare things for the test
 before_script:
   - export PYTHONPATH=$PYTHONPATH:`pwd -P`
-  - cd src\tests
+  - cd src/tests
 
 # Command to run tests
 script:
