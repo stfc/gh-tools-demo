@@ -16,4 +16,4 @@ before_script:
 
 # Command to run tests
 script:
-  - coverage run -m unittest2 discover --buffer
+  - python -m unittest2 discover --buffer
