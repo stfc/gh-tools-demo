@@ -1,0 +1,19 @@
+language: python
+python:
+  - "2.7"
+
+# Route build to container-based infrastructure
+sudo: false
+# Cache the dependencies installed by pip
+cache: pip
+
+# Install defaults to "pip install -r requirements.txt"
+
+# Commands that prepare things for the test
+before_script:
+  - export PYTHONPATH=$PYTHONPATH:`pwd -P`
+  - cd src\tests
+
+# Command to run tests
+script:
+  - coverage run --source=apel,bin -m unittest2 discover --buffer
