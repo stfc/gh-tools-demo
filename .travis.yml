@@ -16,7 +16,7 @@ before_script:
 
 # Command to run tests
 script:
-  - coverage run -m unittest2 discover --buffer
+  - coverage run --source=src -m unittest2 discover --buffer
 
 after_success:
   - coveralls
