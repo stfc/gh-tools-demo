@@ -1,7 +1,4 @@
-import sys
-sys.path.append('..')
-
-import foo
+from src import foo
 import unittest
 
 
