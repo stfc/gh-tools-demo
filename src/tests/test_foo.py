@@ -11,9 +11,9 @@ class TestFoo(unittest.TestCase):
         for i in range(20):
             self.assertEqual(foo.multiplier(i, 0.5 * i), (i * 0.5 * i))
 
-    #def test_subber(self):
-    #    for i in range(20):
-    #        self.assertEqual(foo.subber(i, 0.5 * i), (i - 0.5 * i))
+    def test_subber(self):
+        for i in range(20):
+            self.assertEqual(foo.subber(i, 0.5 * i), (i - 0.5 * i))
 
 if __name__ == '__main__':
     unittest.main()
