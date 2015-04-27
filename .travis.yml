@@ -1,6 +1,5 @@
 language: python
-python:
-  - "2.7"
+python: "2.7"
 
 # Route build to container-based infrastructure
 sudo: false
@@ -15,8 +14,6 @@ before_script:
   - cd src/tests
 
 # Command to run tests
-script:
-  - coverage run --source=src -m unittest2 discover --buffer
+script: coverage run --source=src -m unittest2 discover --buffer
 
-after_success:
-  - coveralls
+after_success: coveralls
