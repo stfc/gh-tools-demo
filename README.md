@@ -3,7 +3,7 @@
 This repository can be used to demonstrate the third-party tools featured in the
 [Introduction to GitHub Tools](https://github.com/tofu-rocketry/gh-tools-demo/blob/master/IntroToGitHubTools.pdf)
 talk by selectively commenting in/out different functions and then pushing to
-Github.
+Github. It was designed to accompany [An Introduction to Git via Demos](https://github.com/davidmeredith/scdIntroToGit).
 
 These badges link to the thrid-party tools that are used in the demo:
 
